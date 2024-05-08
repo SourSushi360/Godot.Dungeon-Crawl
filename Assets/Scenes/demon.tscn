@@ -1,0 +1,63 @@
+[gd_scene load_steps=12 format=3 uid="uid://cckb1rmbjhrnj"]
+
+[ext_resource type="Texture2D" uid="uid://cg3ua4ngfyyg5" path="res://Assets/Sprites/Demon/big_demon_idle_anim_f0.png" id="1_526il"]
+[ext_resource type="Script" path="res://Assets/Scripts/demon.cs" id="1_revwr"]
+[ext_resource type="Texture2D" uid="uid://dmjkiw13vcygy" path="res://Assets/Sprites/Demon/big_demon_idle_anim_f1.png" id="2_l37or"]
+[ext_resource type="Texture2D" uid="uid://b5td7x8cfjl3q" path="res://Assets/Sprites/Demon/big_demon_idle_anim_f2.png" id="3_c5wf0"]
+[ext_resource type="Texture2D" uid="uid://b37nc0f00hatb" path="res://Assets/Sprites/Demon/big_demon_idle_anim_f3.png" id="4_j588g"]
+[ext_resource type="Texture2D" uid="uid://dwjiihygns5s6" path="res://Assets/Sprites/Demon/big_demon_run_anim_f0.png" id="5_fwxc0"]
+[ext_resource type="Texture2D" uid="uid://bfluvfpfnjq24" path="res://Assets/Sprites/Demon/big_demon_run_anim_f1.png" id="6_3ky7u"]
+[ext_resource type="Texture2D" uid="uid://bqii0pgfljr4y" path="res://Assets/Sprites/Demon/big_demon_run_anim_f2.png" id="7_2ksp6"]
+[ext_resource type="Texture2D" uid="uid://o6gs0ykrbbj4" path="res://Assets/Sprites/Demon/big_demon_run_anim_f3.png" id="8_wtbnt"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_fa466"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_526il")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_l37or")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_c5wf0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_j588g")
+}],
+"loop": true,
+"name": &"default",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_fwxc0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_3ky7u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_2ksp6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_wtbnt")
+}],
+"loop": true,
+"name": &"run",
+"speed": 12.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iqf14"]
+size = Vector2(18, 25)
+
+[node name="Demon" type="Area2D"]
+script = ExtResource("1_revwr")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_fa466")
+autoplay = "default"
+frame_progress = 0.323686
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 5.5)
+shape = SubResource("RectangleShape2D_iqf14")
