@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dwjiihygns5s6"
-path="res://.godot/imported/big_demon_run_anim_f0.png-a7f94900418563799917c61d4fea61e0.ctex"
+uid="uid://yhl400ln3gun"
+path="res://.godot/imported/weapon_knight_sword.png-3fb447db1bfeb49a607879ef4d597946.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Demon/big_demon_run_anim_f0.png"
-dest_files=["res://.godot/imported/big_demon_run_anim_f0.png-a7f94900418563799917c61d4fea61e0.ctex"]
+source_file="res://Assets/Sprites/Knight/weapon_knight_sword.png"
+dest_files=["res://.godot/imported/weapon_knight_sword.png-3fb447db1bfeb49a607879ef4d597946.ctex"]
 
 [params]
 

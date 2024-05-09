@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b37nc0f00hatb"
-path="res://.godot/imported/big_demon_idle_anim_f3.png-4643ed4f63c8fe85fa99da41b4628b66.ctex"
+uid="uid://0lwrnv8b3ylr"
+path="res://.godot/imported/zombie_anim_f2.png-679142f86510d60d91cdc11439de8982.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Demon/big_demon_idle_anim_f3.png"
-dest_files=["res://.godot/imported/big_demon_idle_anim_f3.png-4643ed4f63c8fe85fa99da41b4628b66.ctex"]
+source_file="res://Assets/Sprites/Enemies/Zombie/zombie_anim_f2.png"
+dest_files=["res://.godot/imported/zombie_anim_f2.png-679142f86510d60d91cdc11439de8982.ctex"]
 
 [params]
 

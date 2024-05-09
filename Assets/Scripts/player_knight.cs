@@ -3,13 +3,11 @@ using System;
 
 public partial class player_knight : CharacterBody2D
 {
-	// Stats
+	// Attributes
 	[Export] public const float speed = 200.0f;
 	[Export] public int hp = 10;
-	// Attributes
 	public AnimatedSprite2D sprite2D;
 	Vector2 direction;
-	// fun
 	
 	// Process
     public override void _Ready()
@@ -27,8 +25,5 @@ public partial class player_knight : CharacterBody2D
 			sprite2D.Animation = "idle";
 		} else sprite2D.Animation = "run";
 		MoveAndSlide();
-    }
-    public override void _Process(double delta)
-    {
     }
 }

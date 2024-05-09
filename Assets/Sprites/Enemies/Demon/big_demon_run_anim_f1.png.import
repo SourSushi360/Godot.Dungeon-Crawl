@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cg3ua4ngfyyg5"
-path="res://.godot/imported/big_demon_idle_anim_f0.png-6f157cef62747d5fc9d01d2b5a76d087.ctex"
+uid="uid://bfluvfpfnjq24"
+path="res://.godot/imported/big_demon_run_anim_f1.png-f588d3e7a34d1e8ad220d9857198acad.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Demon/big_demon_idle_anim_f0.png"
-dest_files=["res://.godot/imported/big_demon_idle_anim_f0.png-6f157cef62747d5fc9d01d2b5a76d087.ctex"]
+source_file="res://Assets/Sprites/Enemies/Demon/big_demon_run_anim_f1.png"
+dest_files=["res://.godot/imported/big_demon_run_anim_f1.png-f588d3e7a34d1e8ad220d9857198acad.ctex"]
 
 [params]
 

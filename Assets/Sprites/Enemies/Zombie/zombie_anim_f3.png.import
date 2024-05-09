@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://yhl400ln3gun"
-path="res://.godot/imported/weapon_knight_sword.png-c998fcbc0c2e4a20e05957dd2f08001f.ctex"
+uid="uid://bijj4ilw5qnnx"
+path="res://.godot/imported/zombie_anim_f3.png-09dd972f4fd28019f17baee402684ba2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Weapons/weapon_knight_sword.png"
-dest_files=["res://.godot/imported/weapon_knight_sword.png-c998fcbc0c2e4a20e05957dd2f08001f.ctex"]
+source_file="res://Assets/Sprites/Enemies/Zombie/zombie_anim_f3.png"
+dest_files=["res://.godot/imported/zombie_anim_f3.png-09dd972f4fd28019f17baee402684ba2.ctex"]
 
 [params]
 
