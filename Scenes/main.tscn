@@ -780,3 +780,4 @@ position_smoothing_enabled = true
 
 [node name="Zombie" parent="." instance=ExtResource("6_w3phb")]
 position = Vector2(471, 119)
+speed = 150.0

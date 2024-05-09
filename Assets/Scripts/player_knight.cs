@@ -7,7 +7,7 @@ public partial class player_knight : CharacterBody2D
 	[Export] public const float speed = 200.0f;
 	[Export] public int hp = 10;
 	public AnimatedSprite2D sprite2D;
-	Vector2 direction;
+	private Vector2 direction;
 	
 	// Process
     public override void _Ready()
@@ -16,7 +16,7 @@ public partial class player_knight : CharacterBody2D
     }
     public override void _PhysicsProcess(double delta)
     {
-		direction = Input.GetVector("left","right","up","down");
+		direction = Input.GetVector("left","right","up","down").Normalized();
 		Velocity = direction*speed;
 		
 		bool isLeft = direction.X < 0;
