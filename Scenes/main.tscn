@@ -5,7 +5,7 @@
 [ext_resource type="Texture2D" uid="uid://oohvfy508aaq" path="res://Assets/Tilesets/atlas_walls_low-16x16.png" id="3_maasj"]
 [ext_resource type="PackedScene" uid="uid://bj255ckt8kh3" path="res://Assets/Scenes/player_knight.tscn" id="4_5d2yr"]
 [ext_resource type="Script" path="res://Assets/Scripts/player_knight.cs" id="5_qg3j8"]
-[ext_resource type="PackedScene" uid="uid://cu2cxrlpv2vga" path="res://Assets/Scenes/zombie.tscn" id="6_w3phb"]
+[ext_resource type="PackedScene" uid="uid://dpkm7xw5wc0lr" path="res://Assets/Scenes/zombie.tscn" id="6_w3phb"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_udmka"]
 texture = ExtResource("1_s3go8")
@@ -756,6 +756,7 @@ texture = ExtResource("3_maasj")
 
 [sub_resource type="TileSet" id="TileSet_onpy1"]
 physics_layer_0/collision_layer = 1
+physics_layer_0/collision_mask = 0
 sources/0 = SubResource("TileSetAtlasSource_udmka")
 sources/1 = SubResource("TileSetAtlasSource_1b2ig")
 sources/2 = SubResource("TileSetAtlasSource_0sxqx")
@@ -772,6 +773,7 @@ layer_1/navigation_enabled = false
 layer_1/tile_data = PackedInt32Array(196608, 2, 1, 262144, 2, 1, 327680, 2, 1, 393216, 2, 1, 458752, 2, 1, 524288, 2, 1, 589824, 2, 1, 655360, 2, 1, 720896, 2, 1, 786432, 2, 1, 589837, 65538, 0, 655373, 2, 1, 720909, 2, 1, 786445, 2, 1, 655378, 2, 1, 720914, 2, 1, 786450, 2, 1, 196621, 2, 1, 262157, 2, 1, 327693, 2, 1, 393229, 65538, 2, 196626, 2, 1, 262162, 2, 1, 327698, 2, 1, 393234, 196610, 2, 196639, 2, 1, 262175, 2, 1, 327711, 2, 1, 393247, 2, 1, 458783, 2, 1, 524319, 2, 1, 589855, 2, 1, 655391, 2, 1, 720927, 2, 1, 786463, 2, 1, 131073, 131074, 3, 131074, 131074, 3, 131075, 131074, 3, 131076, 131074, 3, 131077, 131074, 3, 131078, 131074, 3, 131079, 131074, 3, 131080, 131074, 3, 131081, 131074, 3, 131082, 131074, 3, 131083, 131074, 3, 131084, 131074, 3, 131091, 131074, 3, 131092, 131074, 3, 131093, 131074, 3, 131094, 131074, 3, 131095, 131074, 3, 131096, 131074, 3, 131097, 131074, 3, 131098, 131074, 3, 131099, 131074, 3, 131100, 131074, 3, 131101, 131074, 3, 131102, 131074, 3, 851987, 131074, 3, 851988, 131074, 2, 851989, 131074, 3, 851990, 131074, 3, 851991, 131074, 3, 851992, 131074, 3, 851993, 131074, 3, 851994, 131074, 3, 851995, 131074, 3, 851996, 131074, 3, 851997, 131074, 3, 851998, 131074, 3, 589838, 131074, 3, 589839, 131074, 3, 589840, 131074, 3, 393230, 131074, 3, 393231, 131074, 3, 393232, 131074, 3, 393233, 131074, 3, 851969, 131074, 3, 851970, 131074, 3, 851971, 131074, 3, 851972, 131074, 3, 851973, 131074, 3, 851974, 131074, 3, 851975, 131074, 3, 851976, 131074, 3, 851977, 131074, 3, 851978, 131074, 3, 851979, 131074, 3, 851980, 131074, 3, 851968, 65538, 2, 851986, 65538, 2, 851981, 196610, 2, 851999, 196610, 2, 131103, 196610, 0, 131085, 196610, 0, 131072, 65538, 0, 131090, 65538, 0, 589841, 131074, 3, 589842, 196610, 0, 393238, 2, 0, 458774, 2, 1, 524310, 2, 2, 655383, 65538, 3, 655384, 131074, 3, 655385, 196610, 3, 262164, 65538, 3, 262165, 131074, 3, 262166, 196610, 3, 720923, 65538, 3, 720924, 131074, 3, 720925, 196610, 3, 262172, 2, 0, 327708, 2, 1, 393244, 2, 2, 393242, 2, 0, 458778, 2, 1, 524314, 2, 2, 262168, 2, 0, 327704, 2, 1, 393240, 2, 2, 655380, 2, 0, 720916, 2, 1, 786452, 2, 1)
 
 [node name="Player-Knight" parent="." instance=ExtResource("4_5d2yr")]
+unique_name_in_owner = true
 position = Vector2(39, 89)
 script = ExtResource("5_qg3j8")
 
@@ -779,5 +781,4 @@ script = ExtResource("5_qg3j8")
 position_smoothing_enabled = true
 
 [node name="Zombie" parent="." instance=ExtResource("6_w3phb")]
-position = Vector2(471, 119)
-speed = 150.0
+position = Vector2(168, 120)
