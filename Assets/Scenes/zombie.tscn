@@ -1,9 +1,11 @@
-[gd_scene load_steps=7 format=3 uid="uid://dpkm7xw5wc0lr"]
+[gd_scene load_steps=9 format=3 uid="uid://dpkm7xw5wc0lr"]
 
 [ext_resource type="Texture2D" uid="uid://dos77657dw818" path="res://Assets/Sprites/Enemies/Zombie/zombie_anim_f1.png" id="2_mv8sr"]
 [ext_resource type="Texture2D" uid="uid://0lwrnv8b3ylr" path="res://Assets/Sprites/Enemies/Zombie/zombie_anim_f2.png" id="3_nwr40"]
 [ext_resource type="Texture2D" uid="uid://bijj4ilw5qnnx" path="res://Assets/Sprites/Enemies/Zombie/zombie_anim_f3.png" id="4_4i887"]
+[ext_resource type="Script" path="res://Assets/Scripts/StateMachine/StateMachine.cs" id="5_fycw1"]
 [ext_resource type="Texture2D" uid="uid://bb1l5rockibue" path="res://Assets/Sprites/Enemies/Zombie/zombie_anim_f10.png" id="5_ub5yi"]
+[ext_resource type="Script" path="res://Assets/Scripts/Zombie/IdleState.cs" id="6_wiel3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_al2ol"]
 size = Vector2(8, 14)
@@ -39,3 +41,11 @@ sprite_frames = SubResource("SpriteFrames_7vhoy")
 autoplay = "default"
 frame = 2
 frame_progress = 0.225027
+
+[node name="StateMachine" type="Node" parent="."]
+script = ExtResource("5_fycw1")
+initialState = NodePath("IdleState")
+
+[node name="IdleState" type="Node" parent="StateMachine" node_paths=PackedStringArray("enemy")]
+script = ExtResource("6_wiel3")
+enemy = NodePath("../..")
